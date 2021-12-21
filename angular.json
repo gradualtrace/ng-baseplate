@@ -12,8 +12,8 @@
         "@schematics/angular:component": {
           "inlineTemplate": true,
           "inlineStyle": true,
-          "skipTests": true,
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
         },
         "@schematics/angular:class": {
           "skipTests": true
