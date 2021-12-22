@@ -136,6 +136,7 @@
         "@schematics/angular:component": {
           "inlineTemplate": true,
           "inlineStyle": true,
+          "style": "scss",
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -172,12 +173,13 @@
             "main": "projects/ng-playground/src/main.ts",
             "polyfills": "projects/ng-playground/src/polyfills.ts",
             "tsConfig": "projects/ng-playground/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "projects/ng-playground/src/favicon.ico",
               "projects/ng-playground/src/assets"
             ],
             "styles": [
-              "projects/ng-playground/src/styles.css"
+              "projects/ng-playground/src/styles.scss"
             ],
             "scripts": []
           },
