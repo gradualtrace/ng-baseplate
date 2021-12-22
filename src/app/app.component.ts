@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-root',
+  /*
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  */
+  /*
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
@@ -28,7 +31,17 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   `,
   styles: []
+  */
+  template: `
+    <h1>{{ title }}</h1>
+    <p>
+      Angular {{ version }}
+    </p>
+    <router-outlet></router-outlet>
+  `,
+  styles: []
 })
 export class AppComponent {
   title = 'ng-baseplate';
+  version = VERSION.major;
 }
