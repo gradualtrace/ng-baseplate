@@ -163,7 +163,7 @@
       },
       "root": "projects/ng-playground",
       "sourceRoot": "projects/ng-playground/src",
-      "prefix": "app",
+      "prefix": "bsp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
