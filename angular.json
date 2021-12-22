@@ -134,6 +134,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true,
           "style": "scss"
         },
         "@schematics/angular:application": {
