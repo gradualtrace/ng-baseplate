@@ -17,5 +17,5 @@ platformBrowserDynamic().bootstrapModule(AppModule, {
   // ngZone: "zone.js",
   // ngZoneEventCoalescing: false
   // ngZoneRunCoalescing: false
-}).then()
+})
   .catch(err => console.error(err));

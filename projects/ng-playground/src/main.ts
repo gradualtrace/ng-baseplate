@@ -1,4 +1,4 @@
-import { enableProdMode } from '@angular/core';
+import { enableProdMode, MissingTranslationStrategy, ViewEncapsulation } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -8,5 +8,14 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(AppModule, {
+  // useJit: true,
+  // defaultEncapsulation: ViewEncapsulation.Emulated,
+  // providers: [],
+  // missingTranslation: MissingTranslationStrategy.Warning,
+  // preserveWhitespaces: false,
+  // ngZone: "zone.js",
+  // ngZoneEventCoalescing: false
+  // ngZoneRunCoalescing: false
+})
   .catch(err => console.error(err));
